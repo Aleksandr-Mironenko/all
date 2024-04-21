@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="static/styles/callback.css" />
     <link rel="stylesheet" href="static/styles/swiper.css" />
     <link rel="stylesheet" href="static/styles/all.css" />
-    <!-- <link rel="stylesheet" href="static/styles/st.css" /> -->
 
     <link rel="stylesheet" href="static/styles/font-family.css" />
   </head>
@@ -120,15 +119,11 @@
               </button>
             </div>
 
-            <a
-              class="left__footer-contacts left__footer-contacts-email"
-              href="mailto:mail@cps.com"
+            <a class="left__footer-contacts-email" href="mailto:mail@cps.com"
               >mail@cps.com</a
             >
 
-            <a
-              class="left__footer-contacts left__footer-contacts-number"
-              href="tel:+78008908900"
+            <a class="left__footer-contacts-number" href="tel:+78008908900"
               >8 800 890 8900</a
             >
           </div>
@@ -775,7 +770,7 @@
             <a href="#">обработку персональных данных</a> и
             <a href="#">соглашаетесь с нашей политикой конфиденциальности</a>
           </p>
-          <button type="button" class="form_push">
+          <button type="button" class="form__push">
             Отправить
             <img src="static/files/strelka/dropdown.png" alt="" />
           </button>
@@ -811,7 +806,7 @@
             <a href="#">обработку персональных данных</a> и
             <a href="#">соглашаетесь с нашей политикой конфиденциальности</a>
           </p>
-          <button type="button" class="form_push">
+          <button type="button" class="form__push">
             Отправить
             <img src="static/files/strelka/dropdown.png" alt="" />
           </button>
@@ -820,12 +815,14 @@
     </aside>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-     <script src="static/scripts/script.js"></script>
-    <script src="static/scripts/script-feedback.js"></script>
-    <script src="static/scripts/script-callback.js"></script>
-    <script src="static/scripts/script-burgerleft.js"></script>
-    <script src="static/scripts/script-brends.js"></script>
-    <script src="static/scripts/script-kinds.js"></script>
-    <script src="static/scripts/script-price.js"></script>
+    <!-- важно в какой последовательности подключать  -->
+    <script src="script.js"></script>
+    <script src="script-feedback.js"></script>
+    <script src="script-callback.js"></script>
+    <script src="script-burgerleft.js"></script>
+    <script src="script-brends.js"></script>
+    <script src="script-kinds.js"></script>
+    <script src="script-price.js"></script>
   </body>
 </html>
+
