@@ -1,0 +1,123 @@
+.price {
+  opacity: 1;
+  max-width: 1121px;
+  background-color: #f8f8f8;
+  font-family: "TT Lakes", serif, "Times New Roman", Times, serif;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  margin: 0 auto;
+
+  @media (min-width: 1120px) {
+    max-width: 1121px;
+    margin: 0 auto;
+  }
+  @media (min-width: 1440px) {
+    margin: 0 0 0 auto;
+  }
+}
+.price__title {
+  border-top: 1px solid #d9fff5;
+  padding: 16px;
+  min-width: 100%;
+  background-image: linear-gradient(to right, #f8f8f8, #ffffff);
+  text-transform: uppercase;
+  color: #7e7e82;
+
+  @media (min-width: 768px) {
+    padding-left: 24px;
+  }
+
+  @media (min-width: 1120px) {
+    padding-left: 32px;
+  }
+}
+
+.price-header {
+  display: none;
+  border: none;
+  background-color: #f8f8f8;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.price__info-item-title {
+  width: 378px;
+}
+.price__item-header-title {
+  color: #7e7e82;
+}
+
+.price__info-item-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: 767px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    width: 250px;
+    align-items: center;
+  }
+}
+
+.price__item-title {
+  color: #7e7e82;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.price__item-descr {
+  letter-spacing: 0.2px;
+}
+.price__order-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 767px) {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+.separator::before {
+  position: absolute;
+  bottom: 0;
+  transform: translatex(-50%);
+  left: 50%;
+  content: "";
+  width: 95%;
+  height: 1px;
+  background-color: #eaeaea;
+}
+.second-size {
+  display: none;
+}
+.price__content {
+  margin: 16px 8px;
+  max-width: 432px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 50px 24px;
+  }
+
+  @media (min-width: 1120px) {
+    margin: 0 0 50px 36px;
+  }
+}
+
+.strelka {
+  padding-left: 8px;
+}
+
+.first-size {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

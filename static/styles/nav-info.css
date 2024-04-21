@@ -1,0 +1,229 @@
+.nav-info {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  max-width: 1121px;
+  font-family: "TT Lakes", serif, "Times New Roman", Times, serif;
+  margin: 0 auto;
+
+  @media (min-width: 1120px) {
+    background-color: #f8f8f8;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 0 auto;
+  }
+}
+.nav-info__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #f8f8f8;
+
+  @media (min-width: 1120px) {
+    justify-content: space-between;
+  }
+}
+.nav-info__title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin: 24px 0;
+
+  @media (min-width: 1120px) {
+    display: flex;
+  }
+}
+.nav-info__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-info__text {
+  font-size: 28px;
+  line-height: 40px;
+  margin-left: 16px;
+  letter-spacing: -0.6px;
+  font-family: "TT Lakes black", serif, "Times New Roman", Times, serif;
+
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+}
+.nav-info__text::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 100%;
+  border: 1px solid #41f6d7;
+  border-radius: 0 4px 4px 0;
+  background-color: #41f6d7;
+}
+.nav-info__right {
+  display: none;
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-info__submit {
+  @media (min-width: 1120px) {
+    margin-right: 8px;
+  }
+}
+.nav-info__request {
+  display: inline-flex;
+}
+.nav-info__status {
+  @media (min-width: 1120px) {
+    margin-right: 8px;
+  }
+}
+.nav-info__checkstatus {
+  display: inline-flex;
+}
+.nav-info__navigation {
+  max-height: 130px;
+}
+.nav-info__navigation-menu {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  white-space: nowrap;
+  overflow-x: auto;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    margin-left: 24px;
+  }
+
+  @media (min-width: 1120px) {
+    flex-wrap: wrap;
+    overflow: unset;
+    row-gap: 2px;
+  }
+}
+.nav-info__navigation-item {
+  display: block;
+  text-wrap: nowrap;
+  padding: 6px 17px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav-info__navigation-item:focus {
+  border: 2px solid #41f6d7;
+  border-radius: 6px;
+  background-color: white;
+}
+.nav-info__information {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 16px 0;
+  width: 100%;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 0 24px;
+    margin: 24px 0;
+  }
+}
+.nav-info__information-text {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+    margin-right: 54px;
+  }
+
+  @media (min-width: 1120px) {
+    align-self: flex-start;
+    margin-top: 8px;
+  }
+}
+.nav-info__text-field {
+  margin: 0 auto;
+  line-height: 18px;
+  font-size: 16px;
+  padding: 0 16px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+  margin: auto 0;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @media (min-width: 1120px) {
+  }
+}
+.nav-info__image-block {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+.nav-info__image {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+.nav-info__movie-more {
+  align-self: flex-start;
+  display: flex;
+  position: relative;
+  font-family: "TT Lakes medium", serif, "Times New Roman", Times, serif;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+  border: 0;
+  border-radius: 0;
+  background: #f8f8f8;
+  padding: 8px 16px;
+
+  @media (min-width: 768px) {
+    padding: 8px 0 8px 0;
+  }
+}
+.nav-info__movie-more:hover {
+  transform: translateX(5px);
+  text-shadow: 0 1px black;
+  transition-duration: 0.5s;
+}
+
+.nav-info__more-arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.open-image {
+  background-image: url("../files/movie-al/down.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.closed-image {
+  background-image: url("../files/movie-al/up.png");
+  background-repeat: no-repeat;
+}
+.nav-info__all-text {
+  display: inline-block;
+}
+.nav-info__image {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+  @media (min-width: 1120px) {
+  }
+}
